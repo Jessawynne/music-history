@@ -51,7 +51,7 @@ input[type="range"] {
   font-size: 14px;
   text-align: left;
 }
-div#checkbox {
+.genre-select-area {
   margin: .5em 1em 0 1em;
   font-size: 12px;
   width: 150px;
@@ -59,9 +59,11 @@ div#checkbox {
 }
 input[type="checkbox"] {
   outline: 2px solid black;
-  background-color: white;
-  border-color: white;
+}
+.genre-float-left > span,
+.genre-float-right > span {
   display: block;
+  margin: .5em 0 1em 0;
 }
 div.genre-float-left {
   float: left;
@@ -100,7 +102,6 @@ h2 {
   padding-left: 1.7em;
   padding-top: .5em;
   font-family: Arial;
-  
 }
 .song-info li {
   display: inline-block;
