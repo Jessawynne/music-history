@@ -1,79 +1,97 @@
+/*This is body styling.*/
 body {
   font-family: arial;
   font-size: 14px;
 }
-/* This is the styling for the main page sections. */
-div#main {
-  width: 800px;
-  height: 150px;
-  margin: 0 1em 0 1em;
+/*This is overall container.*/
+div#flex-main-container {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
 }
-/* This is the styling for the navigation section. */
-div#nav-bar {
+/*This is nav bar styling.*/
+header#flex-nav-bar {
+  flex: 1 100%;
   border: 2px solid black;
   background-color: #FFB4B0;
-  margin-bottom: 1em;
+  margin: 1em auto 1em auto;
   text-align: left;
+  position: fixed;
+  top: 0;
+  width: 98%;
 }
-div#nav-bar ul {
+header.hidden-nav-bar {
+  flex: 1 100%;
+  border: 2px solid black;
+  background-color: #FFB4B0;
+  margin: 1em 1em 1em auto;
+  text-align: left;
+  position: static;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+}
+ul.nav-items li {
   list-style-type: none;
   padding-left: 1em;
-}
-ul.nav-items li{
   display: inline-block;
   cursor: pointer;
 }
-/* This is the styling for the selection section on left. */
-div#left-bar {
+
+/*left bar*/
+div.left-bar {
+  flex-grow: 2;
   border: 2px solid black;
   background-color: #4DD7FA;
-  float: left;
-  width: 20%;
-  height: 350px;
-  padding: 1em 1em 1em 1em;
+  margin-right: 1em;
 }
 input[type="range"] {
   margin: 1em 0 2em 0;
   display: block;
   width: 100%;
 }
-#artist-options {
+.artist-options {
   margin: .5em 0 1.5em 0;
   border: 2.5px solid black;
   width: 95%;
   font-size: 14px;
   text-align: left;
 }
-#album-options {
+.album-options {
   margin: .5em 0 1.5em 0;
   border: 2.5px solid black;
   width: 95%;
   font-size: 14px;
   text-align: left;
 }
-.genre-select-area {
+div.genre-select-area {
   margin: .5em 1em 0 1em;
   font-size: 12px;
   width: 150px;
-  heigth: 100px;
 }
-input[type="checkbox"] {
-  outline: 2px solid black;
-}
-.genre-float-left > span,
-.genre-float-right > span {
+.genre-left > span,
+.genre-right > span {
   display: block;
   margin: .5em 0 1em 0;
+  font-size: 12px;
 }
-div.genre-float-left {
-  float: left;
-  width: 46%;
+
+/*div.genre-left {
+  flex: 1 100%;
 }
-div.genre-float-right {
-  float: right;
-  width: 51%;
+div.genre-right {
+  flex: 1 100%;
+}*/
+
+.flex-item-left {
+  padding: 10px;
+  width: 100px;
+  text-align: left;
 }
-div.submit {
+
+.submit {
   text-align: center;
   margin-top: 1em;
 }
@@ -85,35 +103,47 @@ input[type="submit"] {
   background-color: lightgray;
   border-radius: 5px;
 }
-/* This is the styling for the song section on right. */
-div#right-bar {
+
+/*right bar*/
+div.right-bar {
+  flex-grow: 10;
   border: 2px solid black;
   background-color: #FEFAC0;
-  float: right;
-  width: 73.5%;
-  height: 378px;
 }
 .song-list-item {
   font-family: arial, sans-serif;
   font-size: 16px;
-  margin: 1em 1em 1em 1em;
+  margin: 1em;
+ }
+
+#right-bar-songs :nth-of-type(2n+0) {
+  background-color: #FFF5EE;
+}
+
+#right-bar-songs :nth-of-type(2n+1) {
+  background-color: #F5FFFA;
+}
+
+#right-bar-songs :first-of-type {
   font-weight: bold;
 }
-.no-wrap {
+
+no-wrap {
   clear: both;
 }
-h2 {
-  color: #785616;
-  padding-left: 1.7em;
-  padding-top: .5em;
-  font-family: Arial;
+.flex-item-right {
+  padding: 10px;
+  width: 100px;
+  text-align: left;
 }
-.song-info li {
-  display: inline-block;
+/* This is footer styling. */
+footer.flex-item {
+  flex: 1 100%; 
+  background: white;
+  padding: 10px;
+  width: 100px;
+  color: white;
 }
-li.separator {
-  font-size: 16px;
-  margin: 0 .5em 0 .5em;
-  font-weight: 400;
+div.lots-o-space {
+  padding: 100em;
 }
-]

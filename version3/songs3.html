@@ -2,33 +2,50 @@
 <body>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Jessa's Music History Mockup</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>Jessa's Music History Mockup</title>
+  <link rel="stylesheet" type="text/css" href="songs3.css">
 </head>
 
 <body>
 
-<!-- main page sections -->
-  <div id="main">
   <!-- navigation section -->
-   <div id="nav-bar">  
+   <header id="flex-nav-bar">  
     <nav>
-	 <ul class="nav-items">
-      <li>View Music | </li>
-	  <li><a href="#">Add Music</a> | </li>
-	  <li><a href="#">Profile</a></li>
+   <ul class="nav-items">
+  <li><a href="#">View Music</a></li>
+     <li> | </li>
+    <li><a href="#">Add Music</a></li>
+     <li> | </li>
+    <li><a href="#">Profile</a></li>
      </ul>
     </nav>
-  </div>
+  </header>
+<!-- hidden navigation section -->
+  <header class="hidden-nav-bar">  
+    <nav>
+   <ul class="nav-items">
+  <li><a href="#">View Music</a></li>
+     <li> | </li>
+    <li><a href="#">Add Music</a></li>
+     <li> | </li>
+    <li><a href="#">Profile</a></li>
+     </ul>
+    </nav>
+  </header>
+
+<!-- main page sections -->
+  <div id="flex-main-container">
+
 <!-- selection section on left-->
-  	<div id="left-bar"> 
+    <div class="flex-item-left left-bar"> 
+
      <label for="song-length">Song length:</label>
        <input class="range" type="range" name="song-length" min="15" max="25" step="1" value="20">
       
      <label for="artist-options">Artist:</label>
-       <select id="artist-options" name="artist">
-          <option>Options</option>
+       <select class="artist-options" name="artist">
+          <option><em>Choose an Artist</em></option>
           <option>Of Monsters and Men</option>
           <option>Florence and the Machine</option>
           <option>Ellie Goulding</option>
@@ -37,71 +54,53 @@
        </select>
       
       <label for="album-options">Album:</label>
-        <select id="album-options" name="album">
-          <option>Option</option>
+        <select class="album-options" name="album">
+          <option><em>Choose an Album</em></option>
           <option>Beneath The Skin</option>
           <option>Lungs</option>
           <option>Burn</option>
           <option>In Between Dreams</option>
           <option>MGMT</option>
         </select>
-      
+
       <label for="genre">Genre:</label>
+
     <div class="genre-select-area"> 
-      <div class="genre-float-left">
+
+      <div class="genre-left">
+
          <span><input type="checkbox" name="rock" value="Rock" unchecked="unchecked">Rock</span>
         <span><input type="checkbox" name="pop" value="Pop" unchecked="unchecked">Pop</span>
         <span><input type="checkbox" name="blues" value="blues" unchecked="unchecked">Blues</span>
       </div>
-      <div class="genre-float-right">
+
+      <div class="genre-right">
          <span><input type="checkbox" name="classical" value="classical" unchecked="unchecked">Classical</span>
         <span><input type="checkbox" name="jazz" value="Jazz" unchecked="unchecked">Jazz</span>
          <span><input type="checkbox" name="hip-hop" value="hip-hop" unchecked="unchecked">Hip Hop</span>
       </div>
+
     </div>
     
-   <div class="submit">
-      <input type="submit" value="Filter"></input></div>
-	   </div>
+      <div class="submit">
+      <input type="submit" value="Filter"></input>
+      </div>
+    </div>
   
+
 <!-- song section on right-->
-	<div id="right-bar"> 
-   <!-- <h2>Human</h2>
-    <ul class="song-info">
-      <li>Of Monsters and Men </li>
-      <li class="separator"> | </li>
-      <li>Beneath The Skin</li>
-      <li class="separator"> | </li>
-      <li>Pop</li>
-    </ul>
-   <h2>Dog Days Are Over</h2>
-    <ul class="song-info">
-      <li>Florence and the Machine</li>
-      <li class="separator"> | </li>
-      <li>Lungs</li>
-      <li class="separator"> | </li>
-      <li>Pop</li>
-    </ul>
-   <h2>Burn</h2>
-    <ul class="song-info">
-      <li>Ellie Goulding</li>
-      <li class="separator"> | </li>
-      <li>Burn</li>
-      <li class="separator"> | </li>
-      <li>Pop</li>
-    </ul>
-   <h2>Better Together</h2>
-    <ul class="song-info">
-      <li>Jack Johnson</li>
-      <li class="separator"> | </li>
-      <li>In Between Dreams</li>
-      <li class="separator"> | </li>
-      <li>Rock</li>
-    </ul> -->
-  	</div>
+  <div class="flex-item-right right-bar">
+    <div id="right-bar-songs">
+    </div>
+    </div>
  </div>
   <div class="no-wrap"></div>
+  <footer class="flex-item"></footer>
 
-<script src="songs.js"></script>
+  <div class="lots-o-space"></div>
+
+
+<script src="songs3.js"></script>
+
 </body>
 </html>

@@ -14,45 +14,18 @@ console.log("Song added to front", songs);
 songs.push("Dog Days Are Over > by Florence and the Machine on the album Lungs");
 console.log("Song added to end", songs);
 
-var	songElement = document.getElementById("right-bar");
+var	songElement = document.getElementById("right-bar-songs");
 
-var songList = "", 
-	// title,
-	// artist,
-	// album;
+var songList = "";
 
 for (var i = 0; i < songs.length; i++) {
 	var currentSong = songs[i];
 
 	currentSong = currentSong.replace(/[^a-z A-Z 0-9 \>]+/g, "").replace(">", "-");
 	console.log("currentSong", currentSong);
-
-	// var title = songs.slice(,);
-
-	// var artist = songs.slice(,);
-
-	// var album = songs.slice(,);
 	
-
 	songList = songList + "<div class='song-list-item'>" + currentSong + "</div>";
-	// title = title + "<h2 class='sont-title'>" + 
 }
-
-// console.log("title", title);
-// songElement.innerHTML = title;
-
-// console.log("artist", artist);
-// songElement.innerHTML = artist;
-
-// console.log("album", album);
-// songElement.innerHTML = album;
 
 console.log("songList", songList)
 songElement.innerHTML = songList;
-
-
-
-
-
-
-
