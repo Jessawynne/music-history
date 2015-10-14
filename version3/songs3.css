@@ -128,7 +128,7 @@ div.right-bar {
   font-weight: bold;
 }
 
-no-wrap {
+.no-wrap {
   clear: both;
 }
 .flex-item-right {
