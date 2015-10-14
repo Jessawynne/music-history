@@ -23,7 +23,10 @@ console.log("Song added to end", songs);
 
 var	songElement = document.getElementById("right-bar");
 
-var songList = "";
+var songList = "", 
+	// title,
+	// artist,
+	// album;
 
 // Loop over the array and remove any words or characters that obviously don't belong.
 // Students must find and replace the > character in each item with a - character.
@@ -33,10 +36,32 @@ for (var i = 0; i < songs.length; i++) {
 	currentSong = currentSong.replace(/[^a-z A-Z 0-9 \>]+/g, "").replace(">", "-");
 	console.log("currentSong", currentSong);
 
+	// var title = songs.slice(,);
+
+	// var artist = songs.slice(,);
+
+	// var album = songs.slice(,);
+	
+
 	songList = songList + "<div class='song-list-item'>" + currentSong + "</div>";
+	// title = title + "<h2 class='sont-title'>" + 
 }
 
-console.log("songList", songList)
+// console.log("title", title);
+// songElement.innerHTML = title;
 
+// console.log("artist", artist);
+// songElement.innerHTML = artist;
+
+// console.log("album", album);
+// songElement.innerHTML = album;
+
+console.log("songList", songList)
 songElement.innerHTML = songList;
+
+
+
+
+
+
 
