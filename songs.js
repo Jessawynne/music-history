@@ -34,8 +34,6 @@ for (var i = 0; i < songs.length; i++) {
 	console.log("currentSong", currentSong);
 
 	songList = songList + "<div class='song-list-item'>" + currentSong + "</div>";
-
-
 }
 
 console.log("songList", songList)

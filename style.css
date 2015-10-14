@@ -92,7 +92,12 @@ div#right-bar {
   float: right;
   width: 73.5%;
   height: 378px;
-  font-family: arial; sans-serif;
+}
+.song-list-item {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  margin: 1em 1em 1em 1em;
+  font-weight: bold;
 }
 .no-wrap {
   clear: both;
