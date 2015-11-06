@@ -1,0 +1,149 @@
+body {
+  font-family: 'Audiowide', cursive;;
+  font-size: 20px;
+  font-variant: small-caps;
+  width: 1000px;
+  height: 700px;
+}
+#main-container {
+  padding: 0;
+  list-style: none;
+}
+#nav-bar {
+  background: rgba(26, 26, 26, 0.25);
+  text-align: left;f
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 45px;
+  width: 940px;
+  z-index: 15;
+}
+.hidden-nav-bar {
+  position: static;
+  visibility: hidden;
+  text-align: left;
+  border: 2px solid black;
+}
+ul.nav-items li {
+  list-style-type: none;
+  padding-left: 1em;
+  display: inline-block;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+a:active {
+  color: blue;
+}
+
+a:hover {
+  font-size: 20px;
+}
+
+/* This is the start of left nav bar styling */
+.left-bar {
+  /*border: 2px solid black;*/
+  /*background-color: #4DD7FA;*/
+  margin-right: 1em;
+  padding: 2em;
+  float: left;
+  width: 220px;
+  height: 470px;
+}
+
+input[type="slider"] {
+  margin: 1em 0 2em 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.artist-options {
+  display: inline-block;
+  margin: .5em 0 1.5em 0;
+  border: 2.5px solid black;
+  width: 95%;
+  font-size: 20px;
+  text-align: left;
+}
+
+.album-options {
+  margin: .5em 0 1.5em 0;
+  border: 2.5px solid black;
+  width: 95%;
+  font-size: 20px;
+  text-align: left;
+}
+
+div.genre-select-area {
+  margin: .5em 1em 0 1em;
+  font-size: 20px;
+  width: 150px;
+}
+
+.genre-float-left > span,
+.genre-float-right > span {
+  display: block;
+  margin: .5em 0 1em 0;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 1em;
+}
+
+input[type="submit"] {
+  width: 100px;
+  margin: .5em auto 1em auto;
+  border: 2px solid black;
+  border-radius: 5px;
+ /* font-size: 1em;*/
+  font-family: 'Audiowide', cursive;
+  font-size: 20px;
+}
+
+/* This is the start of right nav bar styling */
+
+#add-container {
+  /*border: 2px solid black;*/
+  /*background-color: #FEFAC0;*/
+  float: left;
+  width: 700px;
+  height: 470px;
+}
+
+#list-music {
+  font-size: 20px;
+  margin: 1em;
+}
+
+#add-music {
+  font-family: 'Nova Mono', sans-serif;
+  font-size: 20px;
+  margin: 1em;
+  display: none;
+}
+#add-music placeholder {
+  font-family: 'Nova Mono', sans-serif;
+  font-size: 20px;
+}
+#profile {
+
+}
+
+/* THIS. IS. FOOTER. */
+#main-container < footer {
+  padding: 20px;
+  width: 100px;
+}
+
+/* THIS. IS. SPACE. */
+.lots-o-space {
+  padding-top: 100em;
+}
+
+/* THIS. IS. HIDDEN. */

@@ -1,107 +1,121 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <body>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Jessa's Music History Mockup</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jessa's Music History</title>
+  <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Audiowide'  >
 </head>
 
 <body>
 
-<!-- main page sections -->
-  <div id="main">
-  <!-- navigation section -->
-   <div id="nav-bar">  
-    <nav>
-	 <ul class="nav-items">
-      <li>View Music | </li>
-	  <li><a href="#">Add Music</a> | </li>
-	  <li><a href="#">Profile</a></li>
-     </ul>
-    </nav>
-  </div>
-<!-- selection section on left-->
-  	<div id="left-bar"> 
-     <label for="song-length">Song length:</label>
-       <input class="range" type="range" name="song-length" min="15" max="25" step="1" value="20">
-      
-     <label for="artist-options">Artist:</label>
-       <select id="artist-options" name="artist">
-          <option>Options</option>
-          <option>Of Monsters and Men</option>
-          <option>Florence and the Machine</option>
-          <option>Ellie Goulding</option>
-          <option>Jack Johnson</option>
-          <option>MGMT</option>
-       </select>
-      
-      <label for="album-options">Album:</label>
-        <select id="album-options" name="album">
-          <option>Option</option>
-          <option>Beneath The Skin</option>
-          <option>Lungs</option>
-          <option>Burn</option>
-          <option>In Between Dreams</option>
-          <option>MGMT</option>
-        </select>
-      
-      <label for="genre">Genre:</label>
-    <div class="genre-select-area"> 
-      <div class="genre-float-left">
-         <span><input type="checkbox" name="rock" value="Rock" unchecked="unchecked">Rock</span>
-        <span><input type="checkbox" name="pop" value="Pop" unchecked="unchecked">Pop</span>
-        <span><input type="checkbox" name="blues" value="blues" unchecked="unchecked">Blues</span>
-      </div>
-      <div class="genre-float-right">
-         <span><input type="checkbox" name="classical" value="classical" unchecked="unchecked">Classical</span>
-        <span><input type="checkbox" name="jazz" value="Jazz" unchecked="unchecked">Jazz</span>
-         <span><input type="checkbox" name="hip-hop" value="hip-hop" unchecked="unchecked">Hip Hop</span>
-      </div>
-    </div>
-    
-   <div class="submit">
-      <input type="submit" value="Filter"></input></div>
-	   </div>
-  
-<!-- song section on right-->
-	<div id="right-bar"> 
-   <!-- <h2>Human</h2>
-    <ul class="song-info">
-      <li>Of Monsters and Men </li>
-      <li class="separator"> | </li>
-      <li>Beneath The Skin</li>
-      <li class="separator"> | </li>
-      <li>Pop</li>
-    </ul>
-   <h2>Dog Days Are Over</h2>
-    <ul class="song-info">
-      <li>Florence and the Machine</li>
-      <li class="separator"> | </li>
-      <li>Lungs</li>
-      <li class="separator"> | </li>
-      <li>Pop</li>
-    </ul>
-   <h2>Burn</h2>
-    <ul class="song-info">
-      <li>Ellie Goulding</li>
-      <li class="separator"> | </li>
-      <li>Burn</li>
-      <li class="separator"> | </li>
-      <li>Pop</li>
-    </ul>
-   <h2>Better Together</h2>
-    <ul class="song-info">
-      <li>Jack Johnson</li>
-      <li class="separator"> | </li>
-      <li>In Between Dreams</li>
-      <li class="separator"> | </li>
-      <li>Rock</li>
-    </ul> -->
-  	</div>
- </div>
-  <div class="no-wrap"></div>
 
-<script src="songs.js"></script>
+<!-- navigation section -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="#">Das Sound Machine</a>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" id="link-list">List Music</a></li>
+        <li><a href="#" id="link-add">Add Music</a></li>
+        <li><a href="#" id="link-profile">Profile</a></li>
+      </ul>
+    </div> <!-- /.navbar-collapse  -->
+  </div> <!-- /.container-fluid -->
+</nav>
+
+<!-- main section -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <!-- song filter section on left-->
+        <ul class="list-group">
+
+          <li class="list-group-item">
+            <label for="song-length">Song length:</label>
+              <input class="slider" type="range" name="song-length" min="1" max="20" step="1" value="5">
+          </li>
+
+          <li class="list-group-item">
+            <label for="artist-options">Artist:</label>
+              <select id="artist-options" name="artist">
+                <option class="artists-available"></option>
+              </select>
+          </li>
+
+          <li class="list-group-item">
+            <label for="album-options">Album:</label>
+              <select id="album-options" name="album">
+                <option class="albums-available"></option>
+              </select>
+          </li>
+
+          <li class="list-group-item">
+            <!-- genre checkboxes -->
+            <label for="genre">Genre:</label>
+              <span><input class="genre-type" type="checkbox" name="genre" value="pop">Pop</span>
+              <span><input class="genre-type" type="checkbox" name="genre" value="rock">Rock</span>
+              <span><input class="genre-type" type="checkbox" name="genre" value="blues">Blues</span>
+              <span><input class="genre-type" type="checkbox" name="genre" value="indie">Indie</span>
+              <span><input class="genre-type" type="checkbox" name="genre" value="jazz">Jazz</span>
+              <span><input class="genre-type" type="checkbox" name="genre" value="hip-hop">Hip Hop</span>
+          </li>
+          <li class="list-group-item">
+            <button class="list-group-item" type="button" name="filter" value="filter">Filter</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- song section on right-->
+      <div class="col-sm-8">
+
+          <!-- list music view -->
+          <div id="list-music"></div>
+
+          <!-- add music view -->
+            <div id="add-view">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <input type="text" name="add-section" id="song-title" autofocus="true" placeholder="Enter Song Title">
+                </li>
+                <li class="list-group-item">
+                  <input type="text" name="add-section" id="artist-name" placeholder="Enter Artist Name">            
+                </li>
+                <li class="list-group-item">
+                  <input type="text" name="add-section" id="album-name" placeholder="Enter Album Name">
+                </li>
+                <li class="list-group-item">
+                  <button id="add-to-list">Add to List</button>
+                </li>
+              </ul>
+   
+            </div>
+
+          <!-- profile view -->
+          <div id="profile">
+            <section class="hidden" id="profile-view"></section>
+          </div>
+
+      </div> 
+    </div>
+  </div>
+
+  <script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
+
 </body>
 </html>

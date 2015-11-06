@@ -1,0 +1,24 @@
+{
+  "songs": [
+    {
+      "title": "Burn",
+      "artist": "Ellie Goulding",
+      "album": "Burn"      
+    },
+    {
+      "title": "Starry Eyed",
+      "artist": "Ellie Goulding",
+      "album": "Lights"      
+    },
+    {
+      "title": "Better Together",
+      "artist": "Jack Johnson",
+      "album": "In Between Dreams"      
+    },
+    {
+      "title": "You and Your Heart",
+      "artist": "Jack Johnson",
+      "album": "To the Sea"      
+    }
+  ]
+}

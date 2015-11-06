@@ -1,0 +1,11 @@
+$font-stack: 'Audiowide', cursive;;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+li {
+  height: 70px;
+}
