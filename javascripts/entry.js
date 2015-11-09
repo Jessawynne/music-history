@@ -12,17 +12,21 @@ requirejs.config({
   }
 });
 
-require(["bootstrap", "populate-songs", "get-more-songs", "dom-songs", "logsongs", "musichistory"],
+require(["bootstrap", "add-songs", "dom-songs", "logsongs", "modify-songs", "musichistory"],
 
-function (bootstrap, populateSongs, moreSongs, domSongs, logSongs, hideAndShow){
+function (bootstrap, addSongs, domSongs, logSongs, modifySongs, hideAndShow){
 
   console.log("domSongs", domSongs);
   console.log("domSongs.toDomSong", domSongs.toDomSong);
 
-  populateSongs.loadSongs(domSongs.toDomSong);
-  moreSongs.loadSongs(domSongs.toDomSong);
+  // populateSongs.loadSongs(domSongs.toDomSong);
 
-  $("#add-to-list").on("click", logSongs.addSongToList);
+  // $("#add-to-list").on("click", logSongs.addSongToList);
+
+  $(".edit-song").on("click", modifySongs.editSongOnList);
+
+  $(".delete-song").on("click", modifySongs.deleteSongFromList);
+      
 
 
 

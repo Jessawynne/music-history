@@ -1,0 +1,54 @@
+{
+  "songs": {
+    "human": {
+      "id": 1,
+      "title": "Human",
+      "artist": "Of Monsters and Men",
+      "album": "Beneath The Skin"
+    },
+    "littletalks": {
+      "id": 2,
+      "title": "Little Talks",
+      "artist": "Of Monsters and Men",
+      "album": "My Head is An Alien"
+    },
+    "dogdays": {
+      "id": 3,
+      "title": "Dog Days Are Over",
+      "artist": "Florence and the Machine",
+      "album": "Lungs"      
+    },
+    "whatkindofman": {
+      "id": 4,
+      "title": "What Kind of Man",
+      "artist": "Florence and the Machine",
+      "album": "How Big, How Blue, How Beautiful"      
+    },
+    "burn": {
+      "id": 5,
+      "title": "Burn",
+      "artist": "Ellie Goulding",
+      "album": "Burn"      
+    },
+    "starryeyed": {
+      "id": 6,
+      "title": "Starry Eyed",
+      "artist": "Ellie Goulding",
+      "album": "Lights"      
+    },
+    "bettertogether": {
+      "id": 7,
+      "title": "Better Together",
+      "artist": "Jack Johnson",
+      "album": "In Between Dreams"      
+    },
+    "youandyourheart": {
+      "id": 8,
+      "title": "You and Your Heart",
+      "artist": "Jack Johnson",
+      "album": "To the Sea"      
+    }
+  }
+}
+
+
