@@ -1,18 +1,15 @@
 define(["jquery"], function($) {
 //Change between page views
 
-  $("#add-view").hide();
-
-  $("#link-add").click(function() {
-    console.log("#link-add");
-      $("#list-music").hide();
-      $("#add-view").show();
-      $("#profile").hide();
-  });
-
   $("#link-list").click(function() {
       $("#list-music").show();
       $("#add-view").hide();
+      $("#profile").hide();
+  });
+  
+  $("#link-add").click(function() {
+      $("#list-music").hide();
+      $("#add-view").show();
       $("#profile").hide();
   });
 

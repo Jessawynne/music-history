@@ -1,17 +1,19 @@
-define(["jquery"], function($) {
+define(["jquery", "hbs"], function($, Handlebars) {
 
-  // $(document).on("click", ".edit-song", function() {
-  
-  //   return {
-  //     editSongOnList: function(target) {
-
-  //     }
-  //   }
-  // });
-
-    return {
-      deleteSongFromList: function (target) {
+  return {
+    deleteSongFromList: function (target) {
+      $(".delete-song").click(function() {
+        console.log("delete-song");
         $(this).parent().remove();
-      }
+      });
     }
+  };
+
+  // return {
+  //   editSongOnList: function(target) {
+  //      $(".edit-song").click(function() {
+  //        console.log("edit-song");
+  //      });
+  //   }
+  // }
 });

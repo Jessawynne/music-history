@@ -4,49 +4,57 @@
       "id": 1,
       "title": "Human",
       "artist": "Of Monsters and Men",
-      "album": "Beneath The Skin"
+      "album": "Beneath The Skin",
+      "year": 2015
     },
     "littletalks": {
       "id": 2,
       "title": "Little Talks",
       "artist": "Of Monsters and Men",
-      "album": "My Head is An Alien"
+      "album": "My Head is An Alien",
+      "year": 2012
     },
     "dogdays": {
       "id": 3,
       "title": "Dog Days Are Over",
       "artist": "Florence and the Machine",
-      "album": "Lungs"      
+      "album": "Lungs",
+      "year": 2009      
     },
     "whatkindofman": {
       "id": 4,
       "title": "What Kind of Man",
       "artist": "Florence and the Machine",
-      "album": "How Big, How Blue, How Beautiful"      
+      "album": "How Big, How Blue, How Beautiful",
+      "year": 2015   
     },
     "burn": {
       "id": 5,
       "title": "Burn",
       "artist": "Ellie Goulding",
-      "album": "Burn"      
+      "album": "Halcyon Days",
+      "year": 2013      
     },
     "starryeyed": {
       "id": 6,
       "title": "Starry Eyed",
       "artist": "Ellie Goulding",
-      "album": "Lights"      
+      "album": "Lights",
+      "year": 2010
     },
     "bettertogether": {
       "id": 7,
       "title": "Better Together",
       "artist": "Jack Johnson",
-      "album": "In Between Dreams"      
+      "album": "In Between Dreams",
+      "year": 2005     
     },
     "youandyourheart": {
       "id": 8,
       "title": "You and Your Heart",
       "artist": "Jack Johnson",
-      "album": "To the Sea"      
+      "album": "To the Sea",
+      "year": 2010      
     }
   }
 }

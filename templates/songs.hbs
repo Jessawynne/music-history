@@ -1,13 +1,12 @@
+{{#each songs}}
 <div>
-  {{#each songs}}
-
   <h3>{{title}}</h3>
 
-    <p class="target-info">Performed by {{artist}} on the album {{album}}</p>
+    <p class="target-info">Performed by {{artist}} on the album {{album}} (<em>{{year}}</em>)</p>
 
     <button class="edit-song btn btn-default" type="button">Edit</button>
 
     <button class="delete-song btn btn-default" type="button">Delete</button>
-    
-  {{/each}}
 </div>
+{{/each}}
+

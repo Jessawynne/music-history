@@ -1,8 +1,3 @@
-<div>
-  {{#each songs}}
-    <label for="artist-options">Artist:</label>
-      <select id="artist-options" name="artist">
-        {{artist}}
-      </select>
-  {{/each}}
-</div>
+{{#each songs}}
+    {{#noDuplicateArtist}}<option class="artist-selection">{{artist}}</option>{{/noDuplicateArtist}}
+{{/each}}
