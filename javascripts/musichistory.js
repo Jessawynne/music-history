@@ -6,8 +6,9 @@ define(["jquery"], function($) {
       $("#add-view").hide();
       $("#profile").hide();
   });
-  
+
   $("#link-add").click(function() {
+      $("#add-view").removeClass("hidden");
       $("#list-music").hide();
       $("#add-view").show();
       $("#profile").hide();

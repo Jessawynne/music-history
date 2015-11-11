@@ -1,4 +1,4 @@
-define(["jquery", "hbs"], function($, Handlebars) {
+define(["jquery", "hbs/handlebars"], function($, Handlebars) {
   //module variable
   var filteredSongs = {
     songs: {
@@ -21,10 +21,28 @@ define(["jquery", "hbs"], function($, Handlebars) {
       require(['hbs!../templates/album'], function (songTemplate) {
         $("#album-options").html(songTemplate(songsObject));
       });
+
+      var uniqueArtists = [];
+  
+      Handlebars.registerHelper('noDuplicateArtist', function(options) {
+        if (uniqueArtists.indexOf(this.artist) === -1) {
+          uniqueArtists.push(this.artist);
+          return options.fn(this);
+        }
+      });
+
+      var uniqueAlbums = [];
+
+      Handlebars.registerHelper('noDuplicateAlbum', function(options) {
+        if (uniqueAlbums.indexOf(this.album) === -1) {
+          uniqueAlbums.push(this.album);
+          return options.fn(this);
+        }
+      });
     }
 
   //when filter button is clicked
-  $(document).on("click", ".filter", function () {
+  $("#artist-options").change(function () {
     //grab text of which artist option is selected
     var selectedArtist = $("#artist-options option:selected").text();
     console.log("selectedArtist", selectedArtist);
@@ -44,7 +62,6 @@ define(["jquery", "hbs"], function($, Handlebars) {
     populateTemplates(filteredSongs);
 
   });
-    
     
   return {
     toDomSong: populateTemplates
