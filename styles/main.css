@@ -8,4 +8,7 @@ li {
 button {
   margin: 10px; }
 
+.hidden {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */

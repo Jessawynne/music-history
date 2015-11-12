@@ -1,7 +1,7 @@
 define(["jquery"], function($) {
 
   $("#add-to-list").click(function(e){
-    
+
     var newSong = {
       title: $("#song-title").val(),
       artist: $("#artist-name").val(),
