@@ -1,0 +1,82 @@
+{
+  "songs" : {
+    {
+      "album" : "Gravel & Wine",
+      "artist" : "Gin Wigmore",
+      "title" : "Black Sheep",
+      "year" : "2011"
+    },
+    {
+      "album" : "Blood to Bone",
+      "artist" : "Gin Wigmore",
+      "title" : "Black Parade",
+      "year" : "2015"
+    },
+    {
+      "album" : "Holy Smoke",
+      "artist" : "Gin Wigmore",
+      "title" : "Mr. Freakshow",
+      "year" : "2009"
+    },
+    {
+      "album" : "One Cell in the Sea ",
+      "artist" : "A Fine Frenzy",
+      "title" : "Almost Lover",
+      "year" : "2007"
+    },
+    {
+      "album" : "In Between Dreams",
+      "artist" : "Jack Johnson",
+      "title" : "Banana Pancakes",
+      "year" : "2005"
+    },
+    {
+      "album" : "In Between Dreams",
+      "artist" : "Jack Johnson",
+      "title" : "Better Together",
+      "year" : 2005
+    },
+    {
+      "album" : "Halcyon Days",
+      "artist" : "Ellie Goulding",
+      "title" : "Burn",
+      "year" : 2013
+    },
+    {
+      "album" : "Lungs",
+      "artist" : "Florence and the Machine",
+      "title" : "Dog Days Are Over",
+      "year" : 2009
+    },
+    {
+      "album" : "Beneath The Skin",
+      "artist" : "Of Monsters and Men",
+      "title" : "Human",
+      "year" : 2015
+    },
+    {
+      "album" : "My Head is An Alien",
+      "artist" : "Of Monsters and Men",
+      "title" : "Little Talks",
+      "year" : 2012
+    },
+    {
+      "album" : "Lights",
+      "artist" : "Ellie Goulding",
+      "title" : "Starry Eyed",
+      "year" : 2010
+    },
+    {
+      "album" : "How Big, How Blue, How Beautiful",
+      "artist" : "Florence and the Machine",
+      "title" : "What Kind of Man",
+      "year" : 2015
+    },
+    {
+      "album" : "To the Sea",
+      "artist" : "Jack Johnson",
+      "title" : "You and Your Heart",
+      "year" : 2010
+    }
+  }
+}

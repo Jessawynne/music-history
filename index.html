@@ -10,8 +10,27 @@
 
       <h1>{{ title }}</h1>
 
+
       <!-- search songs -->
       <input type="text" ng-model="searchSongs" />
+
+      <!-- dropdown menu artist options -->
+      <div>
+        Artist:
+        <select
+            ng-model="theArtist"
+            ng-options="value.name group by value.complete for value in songs">
+        </select>
+      </div>
+
+      <!-- dropdown menu album options -->
+      <div>
+        Album:
+        <select
+            ng-model="theAlbum"
+            ng-options="value.name group by value.complete for value in songs">
+        </select>
+      </div>
 
       <!-- list music view -->
       <div>
@@ -23,7 +42,7 @@
         </ul>
       </div>
 
-    </section> <!-- end of musicApp -->
+    </section> <!-- end of musicApp controller-->
 
     <!-- angular -->
     <script src="lib/bower_components/angular/angular.min.js"></script>

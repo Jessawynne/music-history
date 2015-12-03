@@ -1,6 +1,4 @@
-app.factory("simple-songs", 
-["$q", "$http",
-function($q, $http) {
+app.factory("simple-songs", ["$q", "$http", function($q, $http) {
 
   var song_list;
 
